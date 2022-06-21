@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  align-content: center;
+}
+body {
+  background-color: rgb(26, 28, 40);
+  color: white;
+  display: flex;
+  align-content: center;
+}
+.float {
+  position: relative;
+  text-align: center;
+  margin: 0 10rem;
+  font-size: 25px;
+}
+.float a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 13px;
+  width: 50%;
+  margin: auto;
+  place-content: center;
+  min-height: 100vh;
+}
+.first {
+  background-color: #eb5020;
+  height: 200px;
+  width: 450px;
+  grid-area: a;
+}
+.second {
+  background-color: #ffa401;
+  height: 200px;
+  width: 250px;
+  grid-area: b;
+}
+.third {
+  background-color: #05aa42;
+  height: 220px;
+  width: 300px;
+  grid-area: c;
+}
+.fourth {
+  background-color: #01aefd;
+  height: 87px;
+  width: 400px;
+  grid-area: d;
+}
+.fifth {
+  background-color: #01aefd;
+  height: 120px;
+  width: 400px;
+  grid-area: e;
+}
